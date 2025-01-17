@@ -14,7 +14,11 @@ const aptRouter = createBrowserRouter([
   {
     path: '/',
     element: <App/>,
-    errorElement: <Error/>,
+    errorElement: (
+      <Suspense fallback={<div><h1>Loading...</h1></div>}>
+        <Error/>
+      </Suspense>
+    ),
     children: [
       {
         path: '/',
@@ -22,19 +26,35 @@ const aptRouter = createBrowserRouter([
       },
       {
         path: '/browse-books',
-        element: <Browsebooks/>
+        element: (
+          <Suspense fallback={<div><h1>Loading...</h1></div>}>
+            <Browsebooks/>
+          </Suspense>
+        )
       },
       {
         path: '/browse-books/:category',
-        element: <Browsebooks/>
+        element: (
+          <Suspense fallback={<div><h1>Loading...</h1></div>}>
+            <Browsebooks/>
+          </Suspense>
+        )
       },
       {
         path: '/add-book',
-        element: <Addbook/>
+        element: (
+          <Suspense fallback={<div><h1>Loading...</h1></div>}>
+            <Addbook/>
+          </Suspense>
+        )
       },
       {
         path: '/book-details/:id',
-        element: <BookDetails/>
+        element: (
+          <Suspense fallback={<div><h1>Loading...</h1></div>}>
+            <BookDetails/>
+          </Suspense>
+        )
       }
     ]
   }
