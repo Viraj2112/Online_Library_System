@@ -60,13 +60,13 @@ src/
 ## 📷 Screenshots
 
 ### Homepage
-![Homepage Screenshot](/vite-project/src/assets/Home.png)
+![Homepage Screenshot](/src/assets/Home.png)
 
 ### Browse Books Page
-![Book Details Screenshot](/vite-project/src/assets/Browsebooks.png)
+![Book Details Screenshot](/src/assets/Browsebooks.png)
 
 ### Add Book Page
-![Add Book Screenshot](/vite-project/src/assets/Form.png)
+![Add Book Screenshot](/src/assets/Form.png)
 
 ---
 
